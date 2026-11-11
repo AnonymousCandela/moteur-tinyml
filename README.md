@@ -27,7 +27,7 @@ python3 -m venv .venv && source .venv/bin/activate      # Python 3.10 à 3.12
 pip install -r requirements.txt
 ```
 
-## Reproduire toutes les expériences (environ 2 min)
+## Reproduire toutes les expériences 
 ```bash
 bash experiments/run_all.sh          # 5 graines : génération, A/B/C, agrégation -> results/summary.json
 ```
