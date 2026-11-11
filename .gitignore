@@ -6,3 +6,4 @@ firmware/sdkconfig*
 !firmware/sdkconfig.defaults
 !firmware/sdkconfig.qemu
 .venv/
+/.vscode

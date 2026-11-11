@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "profils": {
+    "entrainement": 41,
+    "calibration": 10,
+    "test": [
+      7,
+      9,
+      14,
+      15,
+      16,
+      41,
+      43,
+      45,
+      51,
+      53,
+      57,
+      60,
+      61,
+      66,
+      68,
+      69,
+      71,
+      80
+    ]
+  },
+  "modele_thermique": {
+    "a_i2": 2.8947167770558675e-06,
+    "b_n": 3.498860395172327e-06,
+    "c_n2": 1.6716748077468733e-09,
+    "d_coolant": -0.0018155442202193097,
+    "e_ambient": -0.000404785968775222,
+    "f_biais": -0.00297112968521244
+  },
+  "seuils": {
+    "electrique": 42.661444036033515,
+    "thermique_C": 4.350599943270635
+  },
+  "fenetres_propres": 41297,
+  "fausse_alerte": {
+    "electrique": 0.0,
+    "thermique": 0.00043586701213163185,
+    "figee": 0.003656439935104245,
+    "totale": 0.004092306947235877
+  },
+  "attaques": {
+    "C3_temp_figee": {
+      "fenetres": 41307,
+      "fenetres_a_impact": 30038,
+      "auc_electrique": 0.44998381717842184,
+      "auc_thermique": 0.8662144431663973,
+      "detection_electrique": 0.0012830755077831845,
+      "detection_thermique": 0.22306146657951437,
+      "detection_figee": 0.9938993390950687,
+      "detection_totale": 0.9973128041252088,
+      "detection_totale_si_impact": 0.9998668353419002
+    },
+    "C4_rejeu": {
+      "fenetres": 41307,
+      "fenetres_a_impact": 32243,
+      "auc_electrique": 0.44677622015180457,
+      "auc_thermique": 0.9015536869322949,
+      "detection_electrique": 0.0012830755077831845,
+      "detection_thermique": 0.34173384656353645,
+      "detection_figee": 0.0,
+      "detection_totale": 0.3425811605781102,
+      "detection_totale_si_impact": 0.3930155382563657
+    }
+  }
+}
