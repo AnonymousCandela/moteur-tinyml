@@ -1,0 +1,8 @@
+data/
+__pycache__/
+*.log
+firmware/build/
+firmware/sdkconfig*
+!firmware/sdkconfig.defaults
+!firmware/sdkconfig.qemu
+.venv/

@@ -1,0 +1,330 @@
+{
+  "graines": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "f1_macro_propre": {
+    "A": {
+      "moyenne": 0.7529245994347213,
+      "ecart_type": 0.026032920177683137,
+      "n": 5
+    },
+    "B_float": {
+      "moyenne": 0.8776518460972438,
+      "ecart_type": 0.03282252617441881,
+      "n": 5
+    },
+    "B_int8": {
+      "moyenne": 0.8772425898576083,
+      "ecart_type": 0.03364625314039501,
+      "n": 5
+    },
+    "C": {
+      "moyenne": 0.8764208052894201,
+      "ecart_type": 0.0334718993237219,
+      "n": 5
+    }
+  },
+  "faux_positifs_normal": {
+    "A": {
+      "moyenne": 0.08984296694081996,
+      "ecart_type": 0.04989664578148956,
+      "n": 5
+    },
+    "B_int8": {
+      "moyenne": 0.06909276134570293,
+      "ecart_type": 0.03374611430474718,
+      "n": 5
+    },
+    "C": {
+      "moyenne": 0.06989197538794292,
+      "ecart_type": 0.03375609301954325,
+      "n": 5
+    }
+  },
+  "delta_f1_quantification": {
+    "moyenne": 0.0004092562396353916,
+    "ecart_type": 0.0014173085302627583,
+    "n": 5
+  },
+  "fausse_suspicion_C_propre": {
+    "moyenne": 0.0012761140269630545,
+    "ecart_type": 0.0005046907413909325,
+    "n": 5
+  },
+  "fausse_suspicion_C_par_classe": {
+    "normal": {
+      "moyenne": 0.0009669740305127957,
+      "ecart_type": 0.00028545775553302175,
+      "n": 5
+    },
+    "P1_surchauffe": {
+      "moyenne": 0.0008438818565400843,
+      "ecart_type": 0.0007291294428033657,
+      "n": 5
+    },
+    "P2_surcharge": {
+      "moyenne": 0.003002129416109565,
+      "ecart_type": 0.0028799160726366143,
+      "n": 5
+    },
+    "P3_sous_vitesse": {
+      "moyenne": 0.002104146700013902,
+      "ecart_type": 0.0015416012687257757,
+      "n": 5
+    },
+    "P4_vibrations": {
+      "moyenne": 0.0011123097049355937,
+      "ecart_type": 0.0009706988388173919,
+      "n": 5
+    }
+  },
+  "detection_C_globale": {
+    "moyenne": 0.9556525206944864,
+    "ecart_type": 0.004230467654124836,
+    "n": 5
+  },
+  "B_trompe_sous_attaque": {
+    "moyenne": 0.499358079096735,
+    "ecart_type": 0.015371534148842842,
+    "n": 5
+  },
+  "A_trompe_sous_attaque": {
+    "moyenne": 0.45846799804074684,
+    "ecart_type": 0.017347126603216172,
+    "n": 5
+  },
+  "masquage": {
+    "rappel_panne_A": {
+      "moyenne": 0.02444256259943449,
+      "ecart_type": 0.010081976182069841,
+      "n": 5
+    },
+    "rappel_panne_B": {
+      "moyenne": 0.07454964070683036,
+      "ecart_type": 0.009025874614227943,
+      "n": 5
+    },
+    "rappel_panne_B_sans_attaque": {
+      "moyenne": 0.6822743928827546,
+      "ecart_type": 0.08307605730323805,
+      "n": 5
+    },
+    "C_sur": {
+      "moyenne": 0.99869305592599,
+      "ecart_type": 0.0009640083859310012,
+      "n": 5
+    },
+    "C_dit_normal": {
+      "moyenne": 0.0013069440740099876,
+      "ecart_type": 0.0009640083859310142,
+      "n": 5
+    },
+    "B_dit_normal": {
+      "moyenne": 0.8338280316612299,
+      "ecart_type": 0.03892176325843699,
+      "n": 5
+    }
+  },
+  "hors_plage": {
+    "A": {
+      "moyenne": 0.5647567175114536,
+      "ecart_type": 0.037873474263201125,
+      "n": 5
+    },
+    "B_int8": {
+      "moyenne": 0.7938558925507373,
+      "ecart_type": 0.024959956891674642,
+      "n": 5
+    },
+    "fausse_suspicion_C": {
+      "moyenne": 0.011907172995780592,
+      "ecart_type": 0.007162464346281883,
+      "n": 5
+    }
+  },
+  "par_attaque": {
+    "C1_injection|compromis": {
+      "detection_C": {
+        "moyenne": 0.6599711880135255,
+        "ecart_type": 0.09367751582274861,
+        "n": 5
+      },
+      "delai_s": {
+        "moyenne": 4.835084652189916,
+        "ecart_type": 4.735770711320687,
+        "n": 5
+      },
+      "B_trompe": {
+        "moyenne": 0.6879039017297865,
+        "ecart_type": 0.07034240338907922,
+        "n": 5
+      }
+    },
+    "C1_injection|interception": {
+      "detection_C": {
+        "moyenne": 1.0,
+        "ecart_type": 0.0,
+        "n": 5
+      },
+      "delai_s": {
+        "moyenne": 0.0,
+        "ecart_type": 0.0,
+        "n": 5
+      },
+      "B_trompe": {
+        "moyenne": 0.5526762331202597,
+        "ecart_type": 0.1591132531437242,
+        "n": 5
+      }
+    },
+    "C2_modification|compromis": {
+      "detection_C": {
+        "moyenne": 0.9971852729085244,
+        "ecart_type": 0.0013598628472032868,
+        "n": 5
+      },
+      "delai_s": {
+        "moyenne": 0.22409296899537842,
+        "ecart_type": 0.10522687780599928,
+        "n": 5
+      },
+      "B_trompe": {
+        "moyenne": 0.6061502875816318,
+        "ecart_type": 0.1390148856975114,
+        "n": 5
+      }
+    },
+    "C2_modification|interception": {
+      "detection_C": {
+        "moyenne": 1.0,
+        "ecart_type": 0.0,
+        "n": 5
+      },
+      "delai_s": {
+        "moyenne": 0.0,
+        "ecart_type": 0.0,
+        "n": 5
+      },
+      "B_trompe": {
+        "moyenne": 0.5905249449684371,
+        "ecart_type": 0.0936347521297877,
+        "n": 5
+      }
+    },
+    "C3_temp_figee|compromis": {
+      "detection_C": {
+        "moyenne": 0.9997827857724679,
+        "ecart_type": 0.00048570577844146706,
+        "n": 5
+      },
+      "delai_s": {
+        "moyenne": 0.01818181818181818,
+        "ecart_type": 0.040655781409087086,
+        "n": 5
+      },
+      "B_trompe": {
+        "moyenne": 0.6110840991076405,
+        "ecart_type": 0.065433998928958,
+        "n": 5
+      }
+    },
+    "C3_temp_figee|interception": {
+      "detection_C": {
+        "moyenne": 1.0,
+        "ecart_type": 0.0,
+        "n": 5
+      },
+      "delai_s": {
+        "moyenne": 0.0,
+        "ecart_type": 0.0,
+        "n": 5
+      },
+      "B_trompe": {
+        "moyenne": 0.4732095307825289,
+        "ecart_type": 0.06412446274078379,
+        "n": 5
+      }
+    },
+    "C4_rejeu|compromis": {
+      "detection_C": {
+        "moyenne": 0.9879102269712285,
+        "ecart_type": 0.0025010793166056616,
+        "n": 5
+      },
+      "delai_s": {
+        "moyenne": 0.48999748096730855,
+        "ecart_type": 0.08852275781254182,
+        "n": 5
+      },
+      "B_trompe": {
+        "moyenne": 0.472264827813614,
+        "ecart_type": 0.043103968470562165,
+        "n": 5
+      }
+    },
+    "C4_rejeu|interception": {
+      "detection_C": {
+        "moyenne": 1.0,
+        "ecart_type": 0.0,
+        "n": 5
+      },
+      "delai_s": {
+        "moyenne": 0.0,
+        "ecart_type": 0.0,
+        "n": 5
+      },
+      "B_trompe": {
+        "moyenne": 0.5155389021953738,
+        "ecart_type": 0.044465172273100415,
+        "n": 5
+      }
+    },
+    "C5_bruit|compromis": {
+      "detection_C": {
+        "moyenne": 0.7895525458956484,
+        "ecart_type": 0.1570606463212025,
+        "n": 5
+      },
+      "delai_s": {
+        "moyenne": 1.4852777777777777,
+        "ecart_type": 0.7957397656843336,
+        "n": 5
+      },
+      "B_trompe": {
+        "moyenne": 0.05756713631141164,
+        "ecart_type": 0.03154911522631942,
+        "n": 5
+      }
+    },
+    "C5_bruit|interception": {
+      "detection_C": {
+        "moyenne": 1.0,
+        "ecart_type": 0.0,
+        "n": 5
+      },
+      "delai_s": {
+        "moyenne": 0.0,
+        "ecart_type": 0.0,
+        "n": 5
+      },
+      "B_trompe": {
+        "moyenne": 0.06341828668963732,
+        "ecart_type": 0.05335189104505857,
+        "n": 5
+      }
+    }
+  },
+  "embarque": {
+    "parametres": 3845,
+    "tflite_octets": 7520,
+    "macs": 3792,
+    "latence_estimee_us": {
+      "1_cycle_par_mac": 15.8,
+      "4_cycles_par_mac": 63.2
+    }
+  }
+}

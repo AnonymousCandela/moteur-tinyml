@@ -1,0 +1,341 @@
+{
+  "seed": 2,
+  "data": "data/dataset_s2.npz",
+  "propre": {
+    "n_fenetres": 19434,
+    "f1_macro": {
+      "A": 0.7711343547693743,
+      "B_float": 0.8222208674250883,
+      "B_int8": 0.8210711636112767,
+      "C": 0.8208201433340818
+    },
+    "f1_par_classe": {
+      "A": [
+        0.8603,
+        0.4853,
+        0.7068,
+        0.9212,
+        0.8821
+      ],
+      "B_int8": [
+        0.8542,
+        0.5603,
+        0.6973,
+        0.9975,
+        0.9962
+      ]
+    },
+    "faux_positifs_normal": {
+      "A": 0.03069888961463096,
+      "B_int8": 0.1121582532425119,
+      "C": 0.11271811141177568
+    },
+    "fausse_suspicion_C": 0.0009776680045281466,
+    "fausse_suspicion_C_par_classe": {
+      "normal": 0.0012130260334048707,
+      "P1_surchauffe": 0.0007032348804500703,
+      "P2_surcharge": 0.0005219206680584551,
+      "P3_sous_vitesse": 0.000505050505050505,
+      "P4_vibrations": 0.0010116337885685382
+    },
+    "fausse_suspicion_par_controle": {
+      "r_elec": 0.0,
+      "r_dT": 0.0,
+      "r_vib": 0.0,
+      "r_noise_lo": 0.0005145621076463929,
+      "r_noise_hi": 0.0004631058968817536,
+      "r_wm": 0.0,
+      "r_dup": 0.0
+    },
+    "confusion_B_int8": [
+      [
+        9515,
+        889,
+        313,
+        0,
+        0
+      ],
+      [
+        1366,
+        1478,
+        0,
+        0,
+        0
+      ],
+      [
+        662,
+        61,
+        1193,
+        0,
+        0
+      ],
+      [
+        5,
+        4,
+        0,
+        1970,
+        1
+      ],
+      [
+        14,
+        0,
+        0,
+        0,
+        1963
+      ]
+    ]
+  },
+  "delta_f1_quantification": 0.00114970381381152,
+  "avant_attaque_fausse_suspicion_C": 0.0011506700961147964,
+  "attaques": {
+    "C1_injection|interception": {
+      "essais": 15,
+      "fenetres": 2369,
+      "detection_C": 1.0,
+      "essais_detectes_C": "15/15",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.5179400590966653,
+      "A_trompe": 0.5609962009286619,
+      "controles": {
+        "r_elec": 0.7978049810046433,
+        "r_dT": 0.009708737864077669,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0,
+        "r_noise_hi": 0.0008442380751371887,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 1.0
+    },
+    "C1_injection|compromis": {
+      "essais": 15,
+      "fenetres": 2262,
+      "detection_C": 0.7612732095490716,
+      "essais_detectes_C": "11/15",
+      "delai_moyen_s": 0.09090909090909091,
+      "B_trompe": 0.7033598585322723,
+      "A_trompe": 0.6503094606542882,
+      "controles": {
+        "r_elec": 0.7581786030061892,
+        "r_dT": 0.005305039787798408,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0004420866489832007,
+        "r_noise_hi": 0.0,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 0.0
+    },
+    "C2_modification|interception": {
+      "essais": 25,
+      "fenetres": 4042,
+      "detection_C": 1.0,
+      "essais_detectes_C": "25/25",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.491835724888669,
+      "A_trompe": 0.38322612568035624,
+      "controles": {
+        "r_elec": 0.9972785749628896,
+        "r_dT": 0.0,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.004453240969816922,
+        "r_noise_hi": 0.0012370113805047005,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 1.0
+    },
+    "C2_modification|compromis": {
+      "essais": 15,
+      "fenetres": 2512,
+      "detection_C": 0.9972133757961783,
+      "essais_detectes_C": "15/15",
+      "delai_moyen_s": 0.23333333333333334,
+      "B_trompe": 0.8415605095541401,
+      "A_trompe": 0.4840764331210191,
+      "controles": {
+        "r_elec": 0.9972133757961783,
+        "r_dT": 0.0,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.009554140127388535,
+        "r_noise_hi": 0.0,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 0.0
+    },
+    "C3_temp_figee|interception": {
+      "essais": 17,
+      "fenetres": 2615,
+      "detection_C": 1.0,
+      "essais_detectes_C": "17/17",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.42065009560229444,
+      "A_trompe": 0.3181644359464627,
+      "controles": {
+        "r_elec": 0.5319311663479923,
+        "r_dT": 0.02026768642447419,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.9770554493307839,
+        "r_noise_hi": 0.0007648183556405354,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 1.0
+    },
+    "C3_temp_figee|compromis": {
+      "essais": 23,
+      "fenetres": 3661,
+      "detection_C": 1.0,
+      "essais_detectes_C": "23/23",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.697350450696531,
+      "A_trompe": 0.6252390057361377,
+      "controles": {
+        "r_elec": 0.5539470090139306,
+        "r_dT": 0.02403714832013111,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.9759628516798688,
+        "r_noise_hi": 0.0013657470636438131,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 0.0
+    },
+    "C4_rejeu|interception": {
+      "essais": 28,
+      "fenetres": 4369,
+      "detection_C": 1.0,
+      "essais_detectes_C": "28/28",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.5058365758754864,
+      "A_trompe": 0.5170519569695583,
+      "controles": {
+        "r_elec": 0.0,
+        "r_dT": 0.025406271457999542,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0016021972991531242,
+        "r_noise_hi": 0.0,
+        "r_wm": 0.9672693980315862,
+        "r_dup": 0.8038452735179675
+      },
+      "couche1": 1.0
+    },
+    "C4_rejeu|compromis": {
+      "essais": 32,
+      "fenetres": 5074,
+      "detection_C": 0.9899487583760347,
+      "essais_detectes_C": "32/32",
+      "delai_moyen_s": 0.484375,
+      "B_trompe": 0.48482459597950334,
+      "A_trompe": 0.4927079227433977,
+      "controles": {
+        "r_elec": 0.0,
+        "r_dT": 0.025620811982656682,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0,
+        "r_noise_hi": 0.01064249113125739,
+        "r_wm": 0.9728025226645645,
+        "r_dup": 0.5059124950729208
+      },
+      "couche1": 0.0
+    },
+    "C5_bruit|interception": {
+      "essais": 10,
+      "fenetres": 1709,
+      "detection_C": 1.0,
+      "essais_detectes_C": "10/10",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.15038033937975423,
+      "A_trompe": 0.07314218841427736,
+      "controles": {
+        "r_elec": 0.004681100058513751,
+        "r_dT": 0.5038033937975425,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0,
+        "r_noise_hi": 0.7536571094207138,
+        "r_wm": 0.09479227618490345,
+        "r_dup": 0.0
+      },
+      "couche1": 1.0
+    },
+    "C5_bruit|compromis": {
+      "essais": 10,
+      "fenetres": 1643,
+      "detection_C": 0.5696895922093731,
+      "essais_detectes_C": "8/10",
+      "delai_moyen_s": 2.6875,
+      "B_trompe": 0.006086427267194157,
+      "A_trompe": 0.0006086427267194157,
+      "controles": {
+        "r_elec": 0.005477784540474742,
+        "r_dT": 0.3006695069993914,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0006086427267194157,
+        "r_noise_hi": 0.5648204503956178,
+        "r_wm": 0.07790626902008521,
+        "r_dup": 0.0
+      },
+      "couche1": 0.0
+    }
+  },
+  "attaques_global": {
+    "detection_C": 0.9568680592279217,
+    "B_trompe": 0.512625594923321,
+    "A_trompe": 0.4485391327340032
+  },
+  "masquage": {
+    "fenetres": 10476,
+    "rappel_panne_A": 0.021191294387170677,
+    "rappel_panne_B": 0.06128293241695303,
+    "rappel_panne_B_sans_attaque": 0.5611344537815126,
+    "C_sur": 0.9998090874379534,
+    "C_dit_normal": 0.00019091256204658267,
+    "B_dit_normal": 0.7931462390225277
+  },
+  "hors_plage": {
+    "f1_macro": {
+      "A": 0.5727847496685505,
+      "B_int8": 0.7804561327436605
+    },
+    "fausse_suspicion_C": 0.006582278481012658
+  },
+  "embarque": {
+    "parametres": 3845,
+    "tflite_octets": 7520,
+    "macs": 3792,
+    "latence_estimee_us": {
+      "1_cycle_par_mac": 15.8,
+      "4_cycles_par_mac": 63.2
+    }
+  },
+  "seuils": {
+    "A": {
+      "1": 109.46228950500499,
+      "2": 6.480500221252441,
+      "3": 2585.5570556640623,
+      "4": 0.8283201333880424
+    },
+    "couche2": {
+      "elec": 0.2732805874943759,
+      "dT": 1.1249971389770508,
+      "vib": -0.021096579199656844,
+      "wm": 0.85,
+      "noise_lo": [
+        0.05983476406931877,
+        0.032978495812416075,
+        7.181335361480713,
+        0.07988790273666382,
+        0.0033468893278390172
+      ],
+      "noise_hi": [
+        0.22500038146972656,
+        0.1874995231628418,
+        48.75,
+        0.3750038146972656,
+        0.06499990820884705
+      ]
+    }
+  },
+  "duree_s": 7.9
+}

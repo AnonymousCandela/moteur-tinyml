@@ -1,0 +1,341 @@
+{
+  "seed": 3,
+  "data": "data/dataset_s3.npz",
+  "propre": {
+    "n_fenetres": 19434,
+    "f1_macro": {
+      "A": 0.7074039465590636,
+      "B_float": 0.8919701387560316,
+      "B_int8": 0.8913915597930263,
+      "C": 0.8899520591676018
+    },
+    "f1_par_classe": {
+      "A": [
+        0.8306,
+        0.5354,
+        0.4867,
+        0.888,
+        0.7963
+      ],
+      "B_int8": [
+        0.9137,
+        0.785,
+        0.7656,
+        0.9973,
+        0.9954
+      ]
+    },
+    "faux_positifs_normal": {
+      "A": 0.1502524093620927,
+      "B_int8": 0.05452042221202386,
+      "C": 0.05525470399265718
+    },
+    "fausse_suspicion_C": 0.001595142533703818,
+    "fausse_suspicion_C_par_classe": {
+      "normal": 0.000734281780633318,
+      "P1_surchauffe": 0.0,
+      "P2_surcharge": 0.006977992485238862,
+      "P3_sous_vitesse": 0.003794037940379404,
+      "P4_vibrations": 0.001509813789632612
+    },
+    "fausse_suspicion_par_controle": {
+      "r_elec": 0.00020582484305855717,
+      "r_dT": 0.0,
+      "r_vib": 0.00030873726458783575,
+      "r_noise_lo": 0.00030873726458783575,
+      "r_noise_hi": 0.0007718431614695894,
+      "r_wm": 0.0,
+      "r_dup": 0.0
+    },
+    "confusion_B_int8": [
+      [
+        10301,
+        466,
+        128,
+        0,
+        0
+      ],
+      [
+        703,
+        2141,
+        0,
+        0,
+        0
+      ],
+      [
+        627,
+        0,
+        1236,
+        0,
+        0
+      ],
+      [
+        6,
+        2,
+        2,
+        1835,
+        0
+      ],
+      [
+        16,
+        2,
+        0,
+        0,
+        1969
+      ]
+    ]
+  },
+  "delta_f1_quantification": 0.0005785789630052829,
+  "avant_attaque_fausse_suspicion_C": 0.0011175525598938324,
+  "attaques": {
+    "C1_injection|interception": {
+      "essais": 13,
+      "fenetres": 2206,
+      "detection_C": 1.0,
+      "essais_detectes_C": "13/13",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.29510426110607435,
+      "A_trompe": 0.31323662737987307,
+      "controles": {
+        "r_elec": 0.9170444242973708,
+        "r_dT": 0.014505893019038985,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0,
+        "r_noise_hi": 0.00045330915684496827,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 1.0
+    },
+    "C1_injection|compromis": {
+      "essais": 17,
+      "fenetres": 2690,
+      "detection_C": 0.5159851301115241,
+      "essais_detectes_C": "9/17",
+      "delai_moyen_s": 7.333333333333333,
+      "B_trompe": 0.6765799256505576,
+      "A_trompe": 0.7122676579925651,
+      "controles": {
+        "r_elec": 0.5130111524163569,
+        "r_dT": 0.0055762081784386614,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0007434944237918215,
+        "r_noise_hi": 0.0003717472118959108,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 0.0
+    },
+    "C2_modification|interception": {
+      "essais": 23,
+      "fenetres": 3732,
+      "detection_C": 1.0,
+      "essais_detectes_C": "23/23",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.6377277599142551,
+      "A_trompe": 0.48633440514469456,
+      "controles": {
+        "r_elec": 0.9965166130760986,
+        "r_dT": 0.0,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0053590568060021436,
+        "r_noise_hi": 0.0010718113612004287,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 1.0
+    },
+    "C2_modification|compromis": {
+      "essais": 17,
+      "fenetres": 2767,
+      "detection_C": 0.9967473798337549,
+      "essais_detectes_C": "17/17",
+      "delai_moyen_s": 0.2647058823529412,
+      "B_trompe": 0.4994578966389592,
+      "A_trompe": 0.52367184676545,
+      "controles": {
+        "r_elec": 0.9967473798337549,
+        "r_dT": 0.0,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0003614022406938923,
+        "r_noise_hi": 0.0007228044813877846,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 0.0
+    },
+    "C3_temp_figee|interception": {
+      "essais": 20,
+      "fenetres": 3103,
+      "detection_C": 1.0,
+      "essais_detectes_C": "20/20",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.4824363519174992,
+      "A_trompe": 0.47695778279084755,
+      "controles": {
+        "r_elec": 0.5059619722848856,
+        "r_dT": 0.02191427650660651,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.9755075733161457,
+        "r_noise_hi": 0.0016113438607798904,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 1.0
+    },
+    "C3_temp_figee|compromis": {
+      "essais": 20,
+      "fenetres": 3145,
+      "detection_C": 1.0,
+      "essais_detectes_C": "20/20",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.5682034976152623,
+      "A_trompe": 0.4785373608903021,
+      "controles": {
+        "r_elec": 0.74181240063593,
+        "r_dT": 0.023529411764705882,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.9764705882352941,
+        "r_noise_hi": 0.001589825119236884,
+        "r_wm": 0.0,
+        "r_dup": 0.0
+      },
+      "couche1": 0.0
+    },
+    "C4_rejeu|interception": {
+      "essais": 20,
+      "fenetres": 3243,
+      "detection_C": 1.0,
+      "essais_detectes_C": "20/20",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.5747764415664508,
+      "A_trompe": 0.7597903176071539,
+      "controles": {
+        "r_elec": 0.0,
+        "r_dT": 0.03145235892691952,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0,
+        "r_noise_hi": 0.0003083564600678384,
+        "r_wm": 0.9660807893925377,
+        "r_dup": 0.8103607770582794
+      },
+      "couche1": 1.0
+    },
+    "C4_rejeu|compromis": {
+      "essais": 40,
+      "fenetres": 6525,
+      "detection_C": 0.9846743295019157,
+      "essais_detectes_C": "40/40",
+      "delai_moyen_s": 0.6125,
+      "B_trompe": 0.4715708812260536,
+      "A_trompe": 0.43126436781609195,
+      "controles": {
+        "r_elec": 0.0,
+        "r_dT": 0.03708812260536398,
+        "r_vib": 0.0,
+        "r_noise_lo": 0.0,
+        "r_noise_hi": 0.010881226053639847,
+        "r_wm": 0.9710344827586207,
+        "r_dup": 0.36367816091954025
+      },
+      "couche1": 0.0
+    },
+    "C5_bruit|interception": {
+      "essais": 12,
+      "fenetres": 1966,
+      "detection_C": 1.0,
+      "essais_detectes_C": "12/12",
+      "delai_moyen_s": 0.0,
+      "B_trompe": 0.05188199389623601,
+      "A_trompe": 0.09664292980671414,
+      "controles": {
+        "r_elec": 0.002034587995930824,
+        "r_dT": 0.38250254323499494,
+        "r_vib": 0.004069175991861648,
+        "r_noise_lo": 0.0,
+        "r_noise_hi": 0.7299084435401831,
+        "r_wm": 0.1185147507629705,
+        "r_dup": 0.0
+      },
+      "couche1": 1.0
+    },
+    "C5_bruit|compromis": {
+      "essais": 8,
+      "fenetres": 1336,
+      "detection_C": 0.9760479041916168,
+      "essais_detectes_C": "8/8",
+      "delai_moyen_s": 0.75,
+      "B_trompe": 0.0531437125748503,
+      "A_trompe": 0.1474550898203593,
+      "controles": {
+        "r_elec": 0.002245508982035928,
+        "r_dT": 0.7275449101796407,
+        "r_vib": 0.0007485029940119761,
+        "r_noise_lo": 0.0,
+        "r_noise_hi": 0.9326347305389222,
+        "r_wm": 0.16541916167664672,
+        "r_dup": 0.0
+      },
+      "couche1": 0.0
+    }
+  },
+  "attaques_global": {
+    "detection_C": 0.9530166379057728,
+    "B_trompe": 0.47637808094292317,
+    "A_trompe": 0.472796535668935
+  },
+  "masquage": {
+    "fenetres": 10669,
+    "rappel_panne_A": 0.03243040584872059,
+    "rappel_panne_B": 0.07414003186802887,
+    "rappel_panne_B_sans_attaque": 0.7174421074994689,
+    "C_sur": 0.9979379510732027,
+    "C_dit_normal": 0.002062048926797263,
+    "B_dit_normal": 0.8562189521042272
+  },
+  "hors_plage": {
+    "f1_macro": {
+      "A": 0.5070231757468201,
+      "B_int8": 0.7921401181392934
+    },
+    "fausse_suspicion_C": 0.002531645569620253
+  },
+  "embarque": {
+    "parametres": 3845,
+    "tflite_octets": 7520,
+    "macs": 3792,
+    "latence_estimee_us": {
+      "1_cycle_par_mac": 15.8,
+      "4_cycles_par_mac": 63.2
+    }
+  },
+  "seuils": {
+    "A": {
+      "1": 81.34884498596193,
+      "2": 6.385915203094483,
+      "3": 2514.550048828125,
+      "4": 0.8722879815101632
+    },
+    "couche2": {
+      "elec": 0.26275292979553533,
+      "dT": 1.1250019073486328,
+      "vib": -0.01944744602777064,
+      "wm": 0.85,
+      "noise_lo": [
+        0.05837190563082695,
+        0.03141734994053841,
+        4.2553652587890625,
+        0.08183299385905266,
+        0.0030954895488917826
+      ],
+      "noise_hi": [
+        0.2570872640610083,
+        0.17500042915344238,
+        47.5,
+        0.3750038146972656,
+        0.06125003099441528
+      ]
+    }
+  },
+  "duree_s": 7.1
+}

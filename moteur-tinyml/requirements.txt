@@ -1,0 +1,7 @@
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.4
+tensorflow>=2.16
+streamlit>=1.40
+plotly>=5.20
+paho-mqtt>=2.0

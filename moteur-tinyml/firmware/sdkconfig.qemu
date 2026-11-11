@@ -1,0 +1,4 @@
+# Exécution sous QEMU : QEMU n'émule ni les instructions SIMD de l'ESP32-S3 (noyaux ESP-NN optimisés)
+# ni le DMA de l'accélérateur SHA. Les noyaux C génériques donnent les mêmes résultats numériques.
+CONFIG_NN_ANSI_C=y
+CONFIG_MBEDTLS_HARDWARE_SHA=n
