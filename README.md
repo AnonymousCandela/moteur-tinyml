@@ -98,6 +98,9 @@ python -m experiments.paderborn --csv measures_v2.csv --out results/paderborn.js
 ## Limites (à discuter dans l'article)
 - **Hausse de vibrations injectée par un nœud compromis :** elle est indiscernable d'une vraie panne P4. Il n'y a qu'un accéléromètre, et aucune autre grandeur ne contredit la mesure. C'est la principale cause des 66 % de détection sur C1. Il faudrait un capteur redondant.
 - **Attaquant connaissant le modèle physique :** il peut falsifier toutes les mesures de façon cohérente, comme l'ont montré Liu et al. (2009). Ce cas n'est pas testé.
-- **Données simulées :** les résultats viennent d'un simulateur. La généralisation est mesurée sur des moteurs hors de la plage d'entraînement et doit être confirmée sur les données de Paderborn. Le script est prêt, mais il n'a été testé que sur un fichier factice au même format.
+- **Données simulées :** les résultats principaux viennent d'un simulateur. La validation sur des mesures réelles de moteur (jeu de Paderborn, `results/paderborn.json`) montre que :
+  - le contrôle de valeur figée se transpose : 99,7 % des températures figées détectées, 0,4 % de fausses alertes ;
+  - le rejeu n'est détecté qu'à 34 % (AUC 0,90 de l'observateur thermique) ;
+  - le résidu électrique est inutile sur ce moteur (AUC 0,45).
 - **Pas de matériel :** la latence et l'énergie sont estimées. La mémoire, elle, est mesurée exactement.
 - **Tatouage actif :** il suppose que l'Edge connaît la petite perturbation pseudo-aléatoire de ±0,25 V appliquée à l'alimentation, à la manière de Mo et Sinopoli (2009).
